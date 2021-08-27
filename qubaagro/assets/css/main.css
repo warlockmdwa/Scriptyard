@@ -20,6 +20,7 @@ a{
     text-decoration: none;
 
 }
+ /* navigation */
 
 nav{
     width: 100%;
@@ -119,6 +120,7 @@ nav{
     text-align: center;
 
 }
+ /* navigation */
 
 
 .page-center{
@@ -186,6 +188,10 @@ nav{
     position: absolute;
     color: white;
 }
+
+
+
+ /* IMAGE SECTION */
 
 .menu-gallery{
     display:flex;
@@ -296,9 +302,13 @@ nav{
   .owl-carousel .prev-slide{
       background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAo9oEluAWkOmHBbv4l0cqaytM_gHPhz9IyUr7N5o_8jErlZS8q2-HdeKibt_1aGLF0pI&usqp=CAU) no-repeat scroll 0 0;
       left: -33px;
+      background-position: center;
+        background-size: cover;
+    background-color: white;
   }
   .owl-carousel .next-slide{
       background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAo9oEluAWkOmHBbv4l0cqaytM_gHPhz9IyUr7N5o_8jErlZS8q2-HdeKibt_1aGLF0pI&usqp=CAU) no-repeat scroll -24px 0px;
+      background-position: center;
       right: -33px;
   }
   .owl-carousel .prev-slide:hover{
@@ -324,3 +334,203 @@ nav{
   span.img-text:hover {
     color: #2caae1;
   }
+ /* IMAGE SECTION */
+
+
+
+
+ /* ABOUT US SECTION */
+
+  .menu-about-us{
+      display: flex;
+      width: 100%;
+      height: 560px;
+  }
+
+  .about-banner{
+      display: flex;
+      width: 100%;
+      font-size: 64px;
+      font-weight: 500;
+      align-items: center;
+      justify-content: center;
+      background-color: #3EB549;
+      color: white;
+    
+}
+  .about-us-more{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+ }
+
+.about-us-info{
+     display: flex;
+     position: absolute;
+     color: white;
+     flex-direction: column;
+ }
+
+ .about-us-banner-title{
+    font-size: 36px;
+    font-weight: 400;
+ }
+
+ .about-us-button button{
+    border: none;
+    background-color: #3EB549;
+    border-radius: 54px;
+    font-size: 20px;
+    font-weight: 400;
+    width: 260px;
+    height: 56px;
+    color: white;
+ }
+
+ /* ABOUT US SECTION */
+
+ /* ABOUT US SECTION */
+
+.menu-new-things{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    background: #E5E5E5;
+
+    
+}
+
+.new-things-header{
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.new-things-post{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.col-post{
+    display: flex;
+    flex-direction: column;
+}
+.inner-post{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-box{
+    padding: 20px;
+}
+.card-img-top{
+    height: 200px;
+    width: 400px;
+}
+
+.card-body{
+    background-color: #1F344F;
+    color: white;
+}
+.card-title{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.card-text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.card-time{
+    background-color: white;
+    margin-right: 30px !important;
+    margin-top: 150px !important;
+    position: absolute;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.new-things-button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.new-things-button button{
+    background-color: #1F344F;
+    border:none;
+    font-size: 20px;
+    font-weight: 400;
+    height: 56px;
+    width: 260px;
+    border-radius: 54px;
+    color: white;
+}
+
+  /* NEW THINGS SECTION */
+
+footer{
+    width: 100%;
+    
+}
+
+.footer-part-1{
+    width: 100%;
+    display: flex;
+    height: 290px;
+}
+
+.footer-column-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.footer-column-alt-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-column-alt-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+  .footer-part-2{
+      width: 100%;
+      display: flex;
+      height: 200px;
+      align-items: center;
+
+  }
+  .footer-part-2 img{
+    width: 100%;
+    position: relative;
+}
+
+
+.footer-icon{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    
+}
+
+.footer-icon i{
+    padding: 25px;
+    size: 35px;
+    font-size: 35px;
+    color: white;
+}
