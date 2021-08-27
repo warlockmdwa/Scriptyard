@@ -1,12 +1,35 @@
-body{
+
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
 
+body{
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
+nav{
+    width: 100%;
+    display: flex;
 }
 
 
 .top-line{
     display: flex;
+    width: 100%;
 }
 
 .banner{
@@ -51,9 +74,19 @@ nav{
 
 }
 .phone-numb{
-    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
+.phone-numb p{
+    margin-top: 20px;
+}
+.phone-numb option{
+
+    margin-right: 20px;
+}
 .navigation{
     display: flex;
     justify-content: center;
@@ -88,13 +121,206 @@ nav{
 }
 
 
-.main-page{
+.page-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main-background{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-banner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+
+.banner-title p{
+    font-size: 64px;
+    font-weight: 600;
+}
+.banner-text{
+    font-size: 30px;
+}
+
+
+.banner-button button{
+    background-color: #1F344F;
+    color: white;
+    border: none;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 54px;
+    width: 370px;
+    height: 80px;
+}
+
+@media only screen and (max-width: 1026px) {
+    .banner-content {
+        display: none;
+    }
+}
+
+.main-subject{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+}
+
+.menu-gallery{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
 
 }
 
-
-.main-page-images{
-    background-position: center;
-    background-size: cover;
+.menu-gallery h1{
+    padding:20px;
 }
+
+.gallery-aligner-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.menu-gallery-items{
+
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contect-menu{
+    display: flex;
+    width: 100%;
+}
+
+
+.owl-carousel{
+    width:1000px !important;  
+}
+
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    font-size: 50px !important;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.gallery-alt-text{
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.menu-gallery-button{
+    display: flex;
+    width: 100%;
+    margin-left: 75px;
+    justify-content: flex-end;
+}
+
+.menu-gallery-button button{
+    background-color:#3EB549;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 54px;
+    width: 260px;
+    height: 56px;
+}
+
+.carousel-wrap {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+  }
+  .owl-carousel .owl-nav{
+    overflow: hidden;
+    height: 0px;
+  }
+
+  .owl-dots{
+      display: none;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span, 
+  .owl-theme .owl-dots .owl-dot:hover span {
+      background: #2caae1;
+  }
+
+
+  .owl-carousel .item {
+      text-align: center;
+  }
+  .owl-carousel .nav-btn{
+      height: 47px;
+      position: absolute;
+      width: 26px;
+      cursor: pointer;
+      top: 100px !important;
+  }
+
+
+
+  .owl-carousel .prev-slide{
+      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAo9oEluAWkOmHBbv4l0cqaytM_gHPhz9IyUr7N5o_8jErlZS8q2-HdeKibt_1aGLF0pI&usqp=CAU) no-repeat scroll 0 0;
+      left: -33px;
+  }
+  .owl-carousel .next-slide{
+      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAo9oEluAWkOmHBbv4l0cqaytM_gHPhz9IyUr7N5o_8jErlZS8q2-HdeKibt_1aGLF0pI&usqp=CAU) no-repeat scroll -24px 0px;
+      right: -33px;
+  }
+  .owl-carousel .prev-slide:hover{
+     background-position: 0px -53px;
+  }
+  .owl-carousel .next-slide:hover{
+    background-position: -24px -53px;
+  }
+
+  span.img-text {
+    text-decoration: none;
+    outline: none;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    cursor: pointer;
+    width: 100%;
+    font-size: 23px;
+    display: block;
+    text-transform: capitalize;
+  }
+  span.img-text:hover {
+    color: #2caae1;
+  }

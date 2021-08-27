@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/main.css">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js">
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"> -->
+   
+
 </head>
 <body>
 <header>
@@ -17,7 +24,11 @@
         </div>
         <div class="nav-con">
             <div class="contact-info">
-                <div class="phone-numb"> 6665383585 -5354424 385492</div>
+                <div class="phone-numb">
+                    <p>042-666-66-66 </p> 
+                    <p>-554-422</p>
+                    <select name="AZ" id=""><option value="AZ">Az</option></select>
+                </div>
             </div>
             <div class="navigation">
                 <nav>
@@ -48,14 +59,110 @@
 </header>
 
 <main>
-    <div class="main-page">
-        <div class="main-page-images">
-            <img  src="assets/images/Rectangle 4.png" alt="">
+    
+<div class="page-center">
+    
+    <div class="main-background">
+        <img src="assets/images/Rectangle 4.png" alt="">
+        <div class="row main-banner">
+            <div class="banner-content col-lg-10">
+                <div class="col-lg-9 banner-title"> 
+                    <p>Basliq</p>
+                </div>
+                <div class="col-lg-9 banner-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+                </div>
+                <div class="col-lg-9 banner-button">
+                    <button class="col-md">Mehsullar</button>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="main-background">
+        <img src="assets/images/Rectangle 5 (1).png" alt="">
+        
+    </div>
+    <br>
+    <br>
+
+    <div class="menu-gallery">
+        <h1 style="color:#3EB549;">QALEREYA</h1>
+        <div class="gallery-aligner-menu">
+            <div class="menu-gallery-items">
+                <div class="carousel-wrap">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                          <img src="assets/images/Rectangle 13.png" />
+                        </div>
+                        <div class="item">
+                          <img src="assets/images/Rectangle 14.png" />
+                        </div>
+                        <div class="item">
+                          <img src="assets/images/Rectangle 14.png" />
+                        </div>
+                        <div class="item">
+                          <img src="assets/images/Rectangle 13.png" />
+                        </div>
+
+                    </div>
+                  </div>
+
+            </div>    
+            <div class="gallery-alt-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>              
+            </div>
+            <br>
+            <div class="menu-gallery-button">
+                <button>Hamisina bax</button>
+            </div>
         </div>
     </div>
+    <br>
+    <div class="menu-about-us">
+        <div class="about-banner">
+            <H1>HAQQIMIZDA</H1>
+        </div>
+        <div class="about-us-more">
+
+        </div>
+    </div>
+    <br>
+    <br>
+
+</div>
+
+  
+    
+
 </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+<script src="assets/owl-carousel/owl.carousel.min.js"></script>
 
 
 
+<script src="assets/js/script.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        navText:["<div class='nav-btn prev-slide'>","<div class='nav-btn next-slide'></div>"],
+        responsive: {
+            0:{
+                items: 1
+            },
+            600:{
+                items: 3
+            },
+            1000:{
+                items: 3
+            }
+        }
+    });
+</script>
 </body>
 </html>
