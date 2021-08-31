@@ -25,12 +25,14 @@ a{
 nav{
     width: 100%;
     display: flex;
+    background-color: white;
 }
 
 
 .top-line{
     display: flex;
     width: 100%;
+    z-index: 3;
 }
 
 .banner{
@@ -92,7 +94,6 @@ nav{
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 10px;
     
     
 }
@@ -111,6 +112,7 @@ nav{
     text-align: center;
     padding: 10px;
     font-size: 20px;
+    font-weight: 400;
 }
 
 .navigation a{
@@ -127,6 +129,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 
@@ -181,14 +184,124 @@ nav{
     }
 }
 
-.main-subject{
+
+/*Main issues */
+
+.main-background-2{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.main-issues{
     display:flex;
     justify-content: center;
     align-items: center;
     position: absolute;
+    width: 100%;
     color: white;
 }
 
+.main-issues-banner{
+    width: 100%;
+    display:flex;
+    margin-left: 120px;
+}
+
+.issues-tab{
+    display: flex;
+    color: black;
+}
+
+
+
+/* Style the tab */
+.tab {
+    display: flex;
+    float: left;
+    border: none;
+    background-color: transparent;
+    width: 20%;
+    height: 498px;
+    margin-right: 100px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: black;
+    
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: transparent;
+    padding: 22px 16px;
+    margin-top: 20px;
+    width: 392px;
+    border: none;
+    border-radius:250px !important;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s;
+    font: 400 17px Lato, sans-serif;
+    color: #000000;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.tab img{
+    height: 50px;
+    width: 50px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background: #F2F2F2;
+    color:black;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background: #F2F2F2;
+    color: #3EB549;
+    font: 500 37px Lato, sans-serif;
+}
+
+.tab-options{
+    display: flex;
+    flex-direction: row;
+}
+
+.issues-icons{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    background-color: #3EB549;
+    padding: 20px;
+    border-radius: 50%;
+
+}
+.issues-button{
+    display: flex;
+    align-items: center;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    display: flex;
+    padding: 0px 12px;
+    border: 1px solid #ddd;
+    width: 70%;
+    border-left: none;
+    height: 596px;
+    width: 598px;
+    padding: 40px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background: #F2F2F2;
+}
+
+/*Main issues */
 
 
  /* IMAGE SECTION */
@@ -204,7 +317,9 @@ nav{
 }
 
 .menu-gallery h1{
-    padding:20px;
+    padding:40px;
+    font-size: 64px;
+    font-weight: 600;
 }
 
 .gallery-aligner-menu{
@@ -304,23 +419,23 @@ nav{
 
 
   .owl-carousel .prev-slide{
-      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAo9oEluAWkOmHBbv4l0cqaytM_gHPhz9IyUr7N5o_8jErlZS8q2-HdeKibt_1aGLF0pI&usqp=CAU) no-repeat scroll 0 0;
-      left: -33px;
+    background: url(http://cdn.onlinewebfonts.com/svg/img_98761.png) no-repeat scroll -24px 0px;
+    left: -33px;
+    transform: rotate(180deg);
       background-position: center;
         background-size: cover;
-    background-color: white;
+        background-color: white;
+        left: -70px;
+
   }
   .owl-carousel .next-slide{
-      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAo9oEluAWkOmHBbv4l0cqaytM_gHPhz9IyUr7N5o_8jErlZS8q2-HdeKibt_1aGLF0pI&usqp=CAU) no-repeat scroll -24px 0px;
+      background: url(http://cdn.onlinewebfonts.com/svg/img_98761.png) no-repeat scroll -24px 0px;
       background-position: center;
-      right: -33px;
+      background-position: center;
+      background-size: cover;
+      right: -70px;
   }
-  .owl-carousel .prev-slide:hover{
-     background-position: 0px -53px;
-  }
-  .owl-carousel .next-slide:hover{
-    background-position: -24px -53px;
-  }
+
 
   span.img-text {
     text-decoration: none;
@@ -353,11 +468,11 @@ nav{
 
   .about-banner{
       display: flex;
-      width: 100%;
+      width: 60%;
       font-size: 64px;
       font-weight: 500;
       align-items: center;
-      justify-content: center;
+     justify-content: center;
       background-color: #3EB549;
       color: white;
     
@@ -367,6 +482,11 @@ nav{
       width: 100%;
       justify-content: center;
       align-items: center;
+ }
+
+ .about-us-more img{
+     width: 100%;
+     height: 100%;
  }
 
 .about-us-info{
@@ -415,7 +535,7 @@ nav{
 .new-things-post{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .col-post{
@@ -498,6 +618,89 @@ nav{
 
   /* NEW THINGS SECTION */
 
+
+
+/* Product page items */
+.products-main{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.products-header-image{
+    display: flex;
+    width: 100%;
+    height: 229px;
+    align-items: center;
+}
+
+.products-header-image img{
+    width: 100%;
+    height: 229px;
+    
+}
+
+.products-header{
+    font-size: 64px;
+    position: absolute;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.product-table{
+    display: flex;
+    width: 100%;
+    background: #E5E5E5;
+}
+
+.product-column{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+
+.product-item{
+    display: flex;
+    width: 296.24px;
+    height: 288.83px;
+    background-color: #3EB549;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 20px 20px 20px 20px;
+}
+
+.producto{
+    border: 20px;
+    width: 280px;
+    height: 288.83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EEEEEE;
+}
+.producto h6{
+    font-size: 20px;
+    font-weight: 700;
+}
+.producto p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0.5;
+}
+
+
+/* Product page items */
+
+
+
 footer{
     width: 100%;
     
@@ -553,9 +756,10 @@ footer{
     justify-content: center;
 }
 
-.footer-email-input input{
+.footer-email input{
     border: none;
     height: 66px;
+    border-radius: 100px;
     width: 327px;
     background-color: #E2E2E2;
 
@@ -572,7 +776,9 @@ footer{
   .footer-part-2 img{
     width: 100%;
     position: relative;
+    height: 200px;
 }
+
 
 
 .footer-icon{
@@ -589,3 +795,4 @@ footer{
     font-size: 35px;
     color: white;
 }
+
