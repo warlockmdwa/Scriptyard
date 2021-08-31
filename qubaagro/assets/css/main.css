@@ -81,15 +81,23 @@ nav{
     align-items: center;
     width: 100%;
     justify-content: space-evenly;
+    color: white;
+
 }
 
 .phone-numb p{
     margin-top: 20px;
 }
 .phone-numb option{
-
+    background-color: transparent;
     margin-right: 20px;
 }
+.phone-numb button, input, optgroup, select, textarea {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
 .navigation{
     display: flex;
     justify-content: center;
@@ -182,6 +190,11 @@ nav{
     .banner-content {
         display: none;
     }
+}
+
+.banner-button button:hover{
+    background-color: #17273b;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%);
 }
 
 
@@ -383,6 +396,10 @@ nav{
     height: 56px;
 }
 
+.menu-gallery-button button:hover{
+    background-color: #34973e;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%);
+}
 .carousel-wrap {
     width: 1000px;
     margin: auto;
@@ -511,6 +528,10 @@ nav{
     height: 56px;
     color: white;
  }
+ .about-us-button button:hover{
+    background-color: #34973e;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%);
+ }
 
  /* ABOUT US SECTION */
 
@@ -616,9 +637,90 @@ nav{
     color: white;
 }
 
+.new-things-button button:hover{
+    background-color: #121d2e;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%);
+}
+
   /* NEW THINGS SECTION */
 
+/* ABOUT US SECTION */
+.about-us-main{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
 
+.about-us-header-image{
+    display: flex;
+    width: 100%;
+    height: 229px;
+    align-items: center;
+}
+
+.about-us-header-image img{
+    width: 100%;
+    height: 229px;
+}
+
+.about-us-header{
+    font-size: 64px;
+    position: absolute;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.about-us-main-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #E5E5E5;
+}
+
+.text-n-image{
+    width: 90%;
+    display: flex;
+    padding: 50px;
+}
+
+.text-n-image h2, p{
+    padding: 15px;
+}
+
+
+.text-n-image-2{
+    width: 90%;
+    display: flex;
+    padding: 50px;
+}
+
+.text-n-image-2 h2, p{
+    padding: 15px;
+}
+
+.double{
+    display: flex;
+    flex-direction: column;
+    height: 610px;
+    width: 610px;
+    padding: 20px;
+
+}
+
+.double-image-2 img{
+    width: 505px;
+    height: 290px;
+    position: absolute;
+    
+}
+/* ABOUT US SECTION */
 
 /* Product page items */
 .products-main{
@@ -627,6 +729,7 @@ nav{
     align-items: center;
     flex-direction: column;
 }
+
 
 
 .products-header-image{
@@ -668,13 +771,21 @@ nav{
 
 .product-item{
     display: flex;
-    width: 296.24px;
+    width: 296.24px !important;
     height: 288.83px;
     background-color: #3EB549;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin: 20px 20px 20px 20px;
+}
+
+
+@media (min-width: 768px){
+.col-md-6 {
+    -webkit-box-flex: 0;
+    flex: 0 0 0% !important; 
+    max-width: 50% !important;
+    }
 }
 
 .producto{
@@ -693,7 +804,8 @@ nav{
 .producto p{
     font-size: 16px;
     font-weight: 400;
-    line-height: 0.5;
+    line-height: 0.1;
+    margin-bottom: 0rem;
 }
 
 
