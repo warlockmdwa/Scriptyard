@@ -17,9 +17,30 @@ ul{
 
 }
 
+
 a{
-    text-decoration: none;
-}
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+    text-decoration: none !important;
+  }
+
+  a:after {
+    content: '';
+    position: absolute;
+    width: 95%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:#3EB549;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+  
+  a:hover:after {
+    transform: scaleX(1);
+  }
 
 
  /* navigation */
@@ -35,16 +56,27 @@ nav{
     display: flex;
     max-width: 100%;
     z-index: 3;
+    height: 120px;
+}
+
+.x-navbar{
+    display: flex;
+    width: 320px;
+    background-color: #3EB549;
+    /* height: 200px;*/
+
 }
 
 .banner{
-    width: 30%;
     height: 120px;
+    width: 314px;
+    border-bottom: 120px solid#1F344F;
+    border-right: 70px solid transparent;
     top: 0px;
     border-radius: 0px;
-    background-color: #1F344F;
     display: flex;
     align-items: center;
+    position: absolute;
     justify-content: center;
 
 }
@@ -52,7 +84,7 @@ nav{
 .banner img{
     width: 200px;
     height: 116px;
-
+    position: absolute;
     left: 34px;
     top: 4px;
     border-radius: 0px;
@@ -64,6 +96,8 @@ nav{
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .contact-info{
@@ -77,7 +111,7 @@ nav{
 .phone-numb{
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 60%;
     justify-content: space-evenly;
     color: white;
 
@@ -108,9 +142,8 @@ nav{
 
 .navigation{
     display: flex;
-    justify-content: center;
-    width: 100%;
-    
+    width: 80%;
+    align-items: flex-end;
     
 }
 
@@ -118,8 +151,9 @@ nav{
 .navigation ul{
     list-style-type: none;
     text-align: center;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
@@ -580,6 +614,7 @@ nav{
     display: flex;
 }
 
+
 .card{
     display: flex;
     align-items: flex-end;
@@ -587,6 +622,8 @@ nav{
 
 .card-box{
     padding: 20px;
+
+
 }
 .card-img-top{
     height: 200px;
@@ -618,16 +655,26 @@ nav{
 
 .card-time{
     margin-right: 30px !important;
-    margin-top: 150px !important;
+    margin-top: 160px !important;
     position: absolute;
-    font-size: 24px;
-    font-weight: 400;
 }
 
 .card-time p{
     line-height: 1.1;
     margin-top: 1px;
     font-weight: 400;
+    line-height: 1.1;
+    margin-top: 1px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media (min-width: 768px){
+    .col-md-6 {
+        -webkit-box-flex: 0;
+        /* flex: 0 0 0% !important; */
+        max-width: 50% !important;
+    }
 }
 
 .time-border{
@@ -741,6 +788,59 @@ nav{
     position: absolute;
     
 }
+
+.partners{
+    display: flex;
+    width: 100%;
+    background: #EBEBEB;
+    height: 174px;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-circle-partners{
+    border-radius: 50%;
+    width: 100px;
+    display: flex;
+    height: 100px;
+}
+.partner-image img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.strange-p{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    background: #3EB549;
+    padding: 55px;
+
+}
+
+.strange-percent-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+}
+
+.strange-percent-text p{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.strange-percent-text h6{
+    font-size: 36px;
+    font-weight: 700;
+}
 /* ABOUT US SECTION */
 
 /* Product page items */
@@ -763,6 +863,7 @@ nav{
 .products-header-image img{
     width: 100%;
     height: 229px;
+    object-fit: cover;
     
 }
 
@@ -785,7 +886,7 @@ nav{
 .product-column{
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 20px;
 
 }
@@ -799,6 +900,7 @@ nav{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    margin: 19px;
 }
 
 
@@ -855,6 +957,7 @@ nav{
 .posts-header-image img{
     width: 100%;
     height: 229px;
+    object-fit: cover;
 }
 
 .posts-header{
@@ -869,7 +972,7 @@ nav{
 
 .posting{
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: center;
 
 }
@@ -885,7 +988,6 @@ nav{
     height: 78px;
     width: 78px;
     display: flex;
-    align-items: center;
     background-color: white;
     justify-content: center;
     border-radius: 50%;
@@ -1047,7 +1149,7 @@ nav{
     display: flex;
     flex-direction: column;
 }
-.sbs-form{
+.sbs-input{
     display: flex;
     flex-direction: row;
 
@@ -1180,12 +1282,18 @@ footer{
     width: 308px;
 }
 
+.footer-email p{
+    font-weight: 500;
+    font-size: 24px;
+}
+
 .footer-email input{
     border: none;
     height: 66px;
     border-radius: 100px;
     background-color: #E2E2E2;
     color: black;
+
 
 }
 .mail-arrow{
@@ -1194,6 +1302,8 @@ footer{
     background-position: center;
     background-size: cover;
     padding: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
     /* right: -70px; */
 
 }
@@ -1201,9 +1311,10 @@ footer{
     background: #3EB549;
     border-radius: 50%;
     position: absolute;
-    margin-bottom: -70px;
+    margin-bottom: -82px;
     margin-left: 240px;
-    padding: 20px;
+    width: 78px;
+    height: 78px;
 }
 
 .max-mail:hover{
@@ -1227,24 +1338,54 @@ footer{
 
 .footer-icon{
     display: flex;
-    width: 100%;
-    justify-content: center;
+    width: 90%;
+    justify-content: space-evenly;
     position: absolute;
     
 }
 
-.footer-icon i{
-    padding: 25px;
-    size: 35px;
-    font-size: 35px;
-    color: white;
+.icon-bg {
+    display: flex;
+    
 }
 
-/* RESPONSIVE */
+.icon-bg img{
+    width: 34px;
+    height: 29px;
+}
+
+.inner-insta{
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 13px;
+    margin-top: 15px;
+    position: absolute;
+}
+.circle-of-insta{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    height: 10px;
+    width:10px;
+    margin-top: -35px;
+    margin-left: 25px;
+    position: absolute;
+    
+}
+
+/* RESPONSIVE DESIGN 4 LIFE*/
 
 @media screen and (max-width:720px) {
+    .strange-p{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+    }
+    
     .footer-part-1 {
-         width:100%; 
+            width:100%; 
             justify-content: center;
             display: flex;
             align-items: center;
@@ -1265,15 +1406,80 @@ footer{
 
 @media screen and (max-width:960px) {
     
+    .strange-p{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+    }
+    
     .footer-part-1{
         display: flex;
+        width:100%; 
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
     }
+    .footer-column-1{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-column-alt-2{
+        align-items: center;
+    }
     .footer-email{
         display: flex;
         flex-direction: column;
+    }
+    .online-app{
+        display: flex;
+        flex-direction: column;
         
+    }
+
+    .card-box{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-tel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-img{
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
+    .main-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sbs-input{
+        flex-direction: column;
+        width: 100%;
+    }
+    .sbs-input input{
+        flex-direction: column;
+        width: 100%;
     }
 }
