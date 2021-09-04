@@ -18,6 +18,7 @@
 <body>
     <header>
     <div class="top-line">
+
         <div class="x-navbar">
             <div class="banner">
                 <img src="../images/logo fon 1.png" alt="">
@@ -56,7 +57,19 @@
                 </nav>
             </div>
         </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+
     </div>
+    <script>const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navigation')[0]
+        
+        toggleButton.addEventListener('click', () => {
+          navbarLinks.classList.toggle('active')
+        })</script>
 </header>
 
 <main>
@@ -206,7 +219,10 @@
 
                     <div class="icon-bg">
                         <div class="wp-back">
-                            <img src="../images/" alt="">
+                            <img src="../images/wp-back.svg" alt="">
+                        </div>
+                        <div class="inner-wp">
+                            <img src="../images/wp.svg" alt="">
                         </div>
                     </div>
 
