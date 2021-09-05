@@ -13,24 +13,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div class="top-line">
-        <div class="x-navbar">
-            <div class="banner">
-                <img src="../images/logo fon 1.png" alt="">
-            </div>
-        </div>
-        <div class="nav-con">
-            <div class="contact-info">
-                <div class="phone-numb">
-                    <a href=""><p>+994 50 500 50 50</p></a> 
-                    <a href=""><p>+994 50 500 50 50</p></a>
-                    <select name="AZ" id=""><option value="AZ">AZ</option></select>
+    <header>
+        <div class="top-line">
+    
+            <div class="x-navbar">
+                <div class="banner">
+                    <img src="../images/logo fon 1.png" alt="">
                 </div>
             </div>
-            <div class="navigation">
+            <div class="nav-con">
+                <div class="contact-info">
+                    <div class="phone-numb">
+                        <a href=""><p>+994 50 500 50 50</p></a> 
+                        <a href=""><p>+994 50 500 50 50</p></a>
+                        <select name="AZ" id=""><option value="AZ">AZ</option></select>
+                    </div>
+                </div>
                 <nav>
-                    <ul>
+                    <div class="openMenu"><i class="fa fa-bars"></i></div>
+                    <ul class="mainMenu">
                         <li>
                             <a href="../../index.html">Esas sehife</a>
                         </li>
@@ -49,13 +50,19 @@
                         <li>
                             <a href="contact.html">Elaqe</a>
                         </li>
+                        <div class="closeMenu"><i class="fa fa-times"></i></div>
+                        <span class="icons">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-github"></i>
+                        </span>
                     </ul>
                 </nav>
             </div>
         </div>
-    </div>
-</header>
-
+    
+    </header>
 <main>
     <div class="page-center">
 
@@ -210,4 +217,6 @@
     </div>
 </main>
 </body>
+<script src="../js/navbar.js"></script>
+
 </html>

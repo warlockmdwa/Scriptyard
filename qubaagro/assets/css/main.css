@@ -48,7 +48,7 @@ a{
 nav{
     width: 100%;
     display: flex;
-    background-color: white;
+    background-color: blueviolet;
 }
 
 
@@ -142,7 +142,7 @@ nav{
 
 .navigation{
     display: flex;
-    width: 80%;
+    width: 100%;
     align-items: flex-end;
     
 }
@@ -1501,58 +1501,95 @@ footer{
 }
 
 
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
+nav {
+    background: rgb(255,255, 255);
+    color: #fff;
+    display: flex;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
 }
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: rgb(75, 54, 54);
-    border-radius: 10px;
+nav .mainMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
 }
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(68, 45, 45);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+nav .mainMenu li a:hover {
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-github:hover {color: rgb(255, 123, 0);}
 
-@media (max-width: 800px) {
-    .navbar {
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex;
-    }
-
-    .navigation {
+        justify-content: center;
+        align-items: center;
+        background: rgb(165, 88, 88);
+        transition: top 1s ease;
         display: none;
-        width: 100%;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
 
     }
-
-    .navigation ul {
-        width: 100%;
-        flex-direction: column;
+    .contact-info{
+        display: none;
+    }
+    nav .openMenu {
+        
+    display: flex;
+    justify-content: flex-end;
     }
 
-    .navigation li {
-        text-align: center;
+    .fa, .fas {
+        color: black;
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 900;
     }
-
-    .navigation ul li a {
-        padding: .5rem 1rem;
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
     }
-
-    .navigation.active {
-        display: flex;
-        color:      
-        black;
-        background-color: blue;
+    .icons i {
+        display: inline-block;
+        padding: 12px;
     }
-
 }

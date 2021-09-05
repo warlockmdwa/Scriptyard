@@ -20,49 +20,56 @@
 
 </head>
 <body>
-<header>
-    <div class="top-line">
-        <div class="x-navbar">
-            <div class="banner">
-                <img src="assets/images/logo fon 1.png" alt="">
-            </div>
-        </div>
-
-        <div class="nav-con">
-            <div class="contact-info">
-                <div class="phone-numb">
-                    <p>+994 50 500 50 50</p> 
-                    <p>+994 50 500 50 50</p>
-                    <select name="AZ" id=""><option value="AZ">AZ</option></select>
+    <header>
+        <div class="top-line">
+    
+            <div class="x-navbar">
+                <div class="banner">
+                    <img src="../images/logo fon 1.png" alt="">
                 </div>
             </div>
-            <div class="navigation">
+            <div class="nav-con">
+                <div class="contact-info">
+                    <div class="phone-numb">
+                        <a href=""><p>+994 50 500 50 50</p></a> 
+                        <a href=""><p>+994 50 500 50 50</p></a>
+                        <select name="AZ" id=""><option value="AZ">AZ</option></select>
+                    </div>
+                </div>
                 <nav>
-                    <ul>
+                    <div class="openMenu"><i class="fa fa-bars"></i></div>
+                    <ul class="mainMenu">
                         <li>
                             <a href="../../index.html">Esas sehife</a>
                         </li>
                         <li>
-                            <a href="assets/front/about_us.html">Haqqimizda</a>
+                            <a href="about_us.html">Haqqimizda</a>
                         </li>
                         <li>
-                            <a href="assets/front/products.html">Mehsullar</a>
+                            <a href="products.html">Mehsullar</a>
                         </li>
                         <li>
-                            <a href="assets/front/new-things.html">Yenilikler</a>
+                            <a href="new-things.html">Yenilikler</a>
                         </li>
                         <li>
-                            <a href="assets/front/gallery.html">Qalerya</a>
+                            <a href="gallery.html">Qalerya</a>
                         </li>
                         <li>
                             <a href="contact.html">Elaqe</a>
                         </li>
+                        <div class="closeMenu"><i class="fa fa-times"></i></div>
+                        <span class="icons">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-github"></i>
+                        </span>
                     </ul>
                 </nav>
             </div>
         </div>
-    </div>
-</header>
+    
+    </header>
 
 <main>
     
@@ -365,7 +372,7 @@
 <script src="assets/owl-carousel/owl.carousel.min.js"></script>
 
 
-
+<script src="../js/navbar.js"></script>
 <script src="assets/js/script.js"></script>
 <script>
     $('.owl-carousel').owlCarousel({
@@ -386,5 +393,6 @@
         }
     });
 </script>
+
 </body>
 </html>
