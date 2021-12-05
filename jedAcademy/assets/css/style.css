@@ -191,6 +191,10 @@ body{
 }
 
 
+.full-sec{
+    background: #1D84C4;
+    width: 100%;
+}
 
 .header-section2{
     display: flex;
@@ -1632,13 +1636,13 @@ color: #000000;
     
     .prices-main{
         width: 50%;
-        height: 630px;
+        height: 680px;
         display: flex;
         background: #F0F0F0;
     }
     .prices-form{
         width: 50%;
-        height: 630px;
+        height: 680px;
         display: flex;
     }
     
@@ -1943,11 +1947,11 @@ button.registration-upper-btn{
     }
 
     .bg-1{
-        height: 800px;
+        height: 860px;
         width: 100%;
     }
     .bg-2{
-        height: 630px;
+        height: 680px;
         width: 100%;
     }
     .prices-section{
@@ -1970,7 +1974,7 @@ button.registration-upper-btn{
         background-color: #1D84C4;
     }
    .prices-main{
-       height: 800px;
+       height: 860px;
    }
    .prices-header{
        display: flex;
@@ -2311,6 +2315,7 @@ footer{
     .about-us-call{
         display: flex;
         flex-direction: column;
+        height:200px;
     }
     .call-button-wp {
         padding: 0px;
@@ -2324,6 +2329,14 @@ footer{
         margin-left: 0px;
         
     }
+    .registration-button{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 0px;
+        margin-top: 20px;
+    }
+    
 }
 
 
