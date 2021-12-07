@@ -75,18 +75,16 @@
 
     </div>
 
-    <div class="full-sec">
-        <div class="header-section2 container">
+    <div class="header-section2">
+        <div class="container nav2-container">
             <div class="navigation-section">
                 <div id="mySidenav" class="sidenav">
                     <nav>
                         <ul class="mainMenu">
                             <div class="header-sec1-images">
                                 <img src="assets/images/jed-PNG 1.png" alt="">
-                    
                             </div>
                             <div class="closeMenu"><i class="fas fa-times"></i></div>
-
                             <div class="main-inner-menu">
                                 <div class="header-sec1-social">
                                     <div class="header-social-icons">
@@ -171,8 +169,8 @@
                 </div>
             </div>
         </div>
+            
     </div>
-    
 </div>   -->
 
 
@@ -193,7 +191,6 @@
                         </a>                
                     </div>
                 </div>
-
                 <div class="item">
                     <img src="assets/images/1055-[Converted] 1.png"/>
                     <div class="slider-info">
@@ -205,6 +202,7 @@
                         </a>
                     </div>
                   </div>
+                
 
                   <div class="item">
                     <img src="assets/images/1055-[Converted] 1.png"/>
@@ -477,7 +475,7 @@
             <div class="about-us-right-section col-lg-6 col-md-12"></div>
         </div>
        <div class="about-us-x">
-            <div class="container">
+            <div class="container about-us-container ">
                 <div class="row about-us-section-row">
                     <div class=" about-col-centered col-lg-4 col-md-6">
                         <div class="about-us-text-1-headers">
@@ -589,8 +587,6 @@
        
     </section>
     <br>
-    <br>
-    <br>
     <section class="course-program" id="study-schedule">
         <div class="lessons-page-header">
             <p>Kursun proqramı</p>
@@ -598,7 +594,7 @@
         </div>
         <div class="main-schedule container">
             <div class="main-schedule-row-1 row">
-                <div class="col-lg-4 col-md-6 schedule-table-res">
+                        <div class="col-lg-4 col-md-6 schedule-table-res">
                     <div class="schedule-table">
                         <div class="schedule-table-header"> 
                             <h2>1-ci ay</h2>
@@ -615,7 +611,7 @@
 								</div>
                                 <li>HTML Bestpraktisləri</li>
                                 <div class="mr-seperator">
-                                    <div class="main-seperator"></div>
+									<div class="main-seperator"></div>
 								</div>
                                 <li>CSS ilə tanışlıq</li>
                                 <div class="mr-seperator">
@@ -637,12 +633,13 @@
                                 <div class="mr-seperator">
 									<div class="main-seperator"></div>
 								</div>
+                                
                                 <li>Vebsayt template-i yığmaq (Flexbox və Animation)</li>
+                               
                             </ul>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 schedule-table-res">
                     <div class="schedule-table">
                         <div class="schedule-table-header"> 
@@ -918,7 +915,7 @@
                     <div class="form-header">
                         <h3>Kursa yazılmaq üçün qeydiyyatdan keçin və ya pulsuz məsləhət alın.</h3>
                     </div>
-                    <form action="">
+                    <form action="{{route('send.email')}}" method="POST" enctype="multipart/form-data">
                         <div class="prices-main-form">
                             <input type="text" id="form-name" name="name" placeholder="Adınız*">
                             <div class="form-typo">
@@ -928,18 +925,19 @@
                             <div class="form-typo">
                             </div>
     
-                            <input type="text" id="form-phone-numb" name="phone-numb" placeholder="Telefon nömrəniz*">
+                            <input type="text" id="form-phone-numb" name="tel" placeholder="Telefon nömrəniz*">
     
                             <div class="form-typo">
     
                             </div>
                         </div>
+                        <div class="reg-slide">
+                            <button class="registration-upper-btn bg-upper-btn" type="submit">
+                                <div class="upper-btn-text"><p>Qeydiyyatdan keç</p></div>
+                            </button>
+                        </div>
+                        
                     </form>
-                    <div class="registration-button">
-                        <a href="" class="registration-upper-btn bg-upper-btn">
-                            <div class="upper-btn-text"><p>Qeydiyyatdan keç</p></div>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
